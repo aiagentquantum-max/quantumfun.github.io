@@ -52,6 +52,24 @@
       color: gold;
       text-align: center;
     }
+    .wallet-box {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .wallet-address {
+      font-family: monospace;
+      background: rgba(0,0,0,0.5);
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .wallet-address:hover {
+      background: rgba(0,0,0,0.7);
+    }
     footer {
       padding: 20px;
       font-size: 0.9em;
@@ -60,6 +78,13 @@
       margin-top: 40px;
     }
   </style>
+  <script>
+    function copyWallet() {
+      const wallet = '0x47d71f793682Ea883B8F55D87B96F88B717076BF';
+      navigator.clipboard.writeText(wallet);
+      alert('Wallet address copied to clipboard: ' + wallet);
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -77,6 +102,17 @@
   <section>
     <h2>Why Quantum-Resistant?</h2>
     <p>As quantum computers become more powerful, traditional cryptographic systems face the risk of being compromised. QuantumFun’s mission is to stay ahead of this curve by integrating advanced, quantum-safe algorithms into blockchain technology, ensuring long-term security and trust for our users and partners.</p>
+  </section>
+
+  <section>
+    <h2>Support the Project</h2>
+    <p>If you believe in our mission and want to support the future of quantum-resistant blockchain technology, you can donate ETH to our project wallet:</p>
+    <div class="wallet-box">
+      <p>Ethereum Wallet Address:</p>
+      <div class="wallet-address" onclick="copyWallet()">0x47d71f793682Ea883B8F55D87B96F88B717076BF</div>
+      <p style="margin-top:15px;">Scan QR Code:</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=0x47d71f793682Ea883B8F55D87B96F88B717076BF" alt="ETH QR Code">
+    </div>
   </section>
 
   <footer>
