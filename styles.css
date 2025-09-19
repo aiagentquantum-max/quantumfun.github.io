@@ -21,7 +21,7 @@ header {
 }
 
 header .logo img {
-  height: 60px;
+  height: 80px;
 }
 
 header nav a {
@@ -50,7 +50,7 @@ header nav a:hover {
 }
 
 section {
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 h2 {
@@ -62,14 +62,14 @@ h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 
 .logo-grid img {
-  max-width: 120px;
+  max-width: 220px;
   background: white;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
   transition: transform 0.3s;
 }
 
@@ -77,16 +77,29 @@ h2 {
   transform: scale(1.1);
 }
 
+#support .qr-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#support .qr {
+  width: 200px;
+  height: 200px;
+}
+
 .wallet {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
   background: #222;
-  padding: 10px;
+  padding: 12px;
   border-radius: 8px;
   display: inline-block;
+  margin-top: 10px;
 }
 
 footer {
   background: #000;
-  padding: 10px;
+  padding: 15px;
   margin-top: 20px;
 }
