@@ -3,135 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QuantumFun | Quantum-Resistant Blockchain</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>QuantumFun - Quantum-Resistant Blockchain</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gradient-to-b from-indigo-900 to-black text-white">
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/quantumfun/logofun.png" alt="QuantumFun Logo">
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#vulnerabilities">Vulnerabilities</a>
+      <a href="#team">Team</a>
+      <a href="#support">Support</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <!-- NAVIGATION -->
-  <nav class="fixed w-full top-0 left-0 bg-black/40 backdrop-blur-md p-4 flex justify-center space-x-6 text-yellow-400 z-50">
-    <a href="#hero" class="hover:underline">Home</a>
-    <a href="#about" class="hover:underline">About</a>
-    <a href="#vulnerabilities" class="hover:underline">Vulnerabilities</a>
-    <a href="#team" class="hover:underline">Team</a>
-    <a href="#support" class="hover:underline">Support</a>
-    <a href="#contact" class="hover:underline">Contact</a>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <section id="hero" class="relative min-h-screen flex flex-col justify-center items-center text-center p-6 bg-black">
-    <img src="assets/hero-banner.jpg" alt="QuantumFun Banner" class="absolute top-0 left-0 w-full h-full object-cover opacity-30">
-    <div class="relative z-10">
-      <img src="assets/logo.png" alt="QuantumFun Logo" class="w-32 mx-auto mb-6">
-      <h1 class="text-4xl md:text-6xl font-bold text-yellow-400">QuantumFun</h1>
-      <p class="mt-4 text-lg max-w-xl mx-auto">
-        Building a quantum-resistant blockchain powered by advanced AI agents.
-      </p>
-      <a href="#about" class="mt-6 inline-block px-6 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-300 transition">
-        Learn More
-      </a>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>QuantumFun</h1>
+      <p>Quantum-Resistant Blockchain Powered by AI Agents</p>
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold text-yellow-400 mb-4">About QuantumFun</h2>
-    <p>
-      QuantumFun is developing next-generation blockchain technology designed to withstand the challenges of the quantum era.
-      Our platform integrates AI-driven agents to provide secure, scalable, and intelligent decentralized solutions.
-    </p>
-  </section>
-
-  <!-- BLOCKCHAIN VULNERABILITIES -->
-  <section id="vulnerabilities" class="py-20 px-6 max-w-5xl mx-auto text-center">
-    <h2 class="text-3xl font-bold text-yellow-400 mb-6">Blockchain Security Challenges</h2>
-    <p class="mb-8">
-      With the rise of quantum computing, traditional cryptographic algorithms face significant risks. 
-      Leading exchanges like OKX, Bybit, and Binance must adapt by integrating quantum-resistant solutions to 
-      safeguard digital assets and maintain user trust.
-    </p>
-    <div class="flex justify-center space-x-8 mb-8">
-      <img src="assets/okx-logo.png" alt="OKX" class="h-12">
-      <img src="assets/bybit-logo.png" alt="Bybit" class="h-12">
-      <img src="assets/binance-logo.png" alt="Binance" class="h-12">
-    </div>
-    <a href="#support" class="px-6 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-300 transition">
-      Learn More
-    </a>
-  </section>
-
-  <!-- TEAM SECTION -->
-  <section id="team" class="py-20 px-6 max-w-5xl mx-auto text-center">
-    <h2 class="text-3xl font-bold text-yellow-400 mb-6">Our Team</h2>
-    <p class="mb-8">
-      Our team consists of world-class researchers, mathematicians, physicists, and programmers 
-      dedicated to building a secure, quantum-resistant blockchain. 
-      We collaborate across leading universities and institutions to drive innovation and breakthroughs.
-    </p>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center">
-      <a href="https://www.caltech.edu" target="_blank" class="hover:opacity-80 transition">
-        <img src="assets/caltech-logo.png" alt="Caltech" class="mx-auto h-14">
-      </a>
-      <a href="https://www.mit.edu" target="_blank" class="hover:opacity-80 transition">
-        <img src="assets/mit-logo.png" alt="MIT" class="mx-auto h-14">
-      </a>
-      <a href="https://en.ustc.edu.cn/" target="_blank" class="hover:opacity-80 transition">
-        <img src="assets/ustc-logo.png" alt="USTC" class="mx-auto h-14">
-      </a>
-      <a href="https://ethz.ch/en.html" target="_blank" class="hover:opacity-80 transition">
-        <img src="assets/eth-logo.png" alt="ETH Zurich" class="mx-auto h-14">
-      </a>
-      <a href="https://nus.edu.sg/" target="_blank" class="hover:opacity-80 transition">
-        <img src="assets/nus-logo.png" alt="NUS" class="mx-auto h-14">
-      </a>
+  <section id="vulnerabilities">
+    <h2>Blockchain Vulnerabilities</h2>
+    <p>Exploring vulnerabilities in top exchanges and working to make blockchain quantum-resistant.</p>
+    <div class="logo-grid">
+      <img src="assets/exchanges/okx.png" alt="OKX Logo">
+      <img src="assets/exchanges/bybit.png" alt="Bybit Logo">
+      <img src="assets/exchanges/binance.png" alt="Binance Logo">
     </div>
   </section>
 
-  <!-- SUPPORT SECTION -->
-  <section id="support" class="py-20 px-6 max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold text-yellow-400 mb-4">Support the Project</h2>
-    <p class="mb-4">Donate ETH to support development:</p>
-    <div class="bg-white/10 p-4 rounded-lg">
-      <div class="font-mono text-yellow-400 cursor-pointer" onclick="copyWallet()">
-        0x47d71f793682Ea883B8F55D87B96F88B717076BF
-      </div>
-      <p class="mt-2 text-sm">Click address to copy</p>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=0x47d71f793682Ea883B8F55D87B96F88B717076BF" alt="ETH QR Code" class="mt-4 mx-auto">
+  <section id="team">
+    <h2>Our Team</h2>
+    <p>Our team consists of researchers, mathematicians, physicists, and programmers from top institutions worldwide:</p>
+    <div class="logo-grid">
+      <a href="https://www.caltech.edu" target="_blank"><img src="assets/universities/caltech.png" alt="Caltech"></a>
+      <a href="https://www.mit.edu" target="_blank"><img src="assets/universities/mit.png" alt="MIT"></a>
+      <a href="https://en.ustc.edu.cn" target="_blank"><img src="assets/universities/ustc.png" alt="USTC"></a>
+      <a href="https://ethz.ch" target="_blank"><img src="assets/universities/ethz.png" alt="ETH Zurich"></a>
+      <a href="https://nus.edu.sg" target="_blank"><img src="assets/universities/nus.png" alt="NUS"></a>
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold text-yellow-400 mb-4">Contact Us</h2>
-    <p class="mb-6">Have questions or want to collaborate? Reach out to us!</p>
-    <div class="bg-white/10 p-6 rounded-lg shadow-lg">
-      <p class="mb-4">Email us directly at:</p>
-      <a href="mailto:aiagentquantum@gmail.com" class="text-yellow-400 font-mono text-lg hover:underline">
-        aiagentquantum@gmail.com
-      </a>
-      <p class="mt-6 mb-4">Or use the quick contact form below:</p>
-      <form action="mailto:aiagentquantum@gmail.com" method="POST" enctype="text/plain" class="space-y-4">
-        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded bg-black/40 border border-yellow-400 text-white">
-        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-black/40 border border-yellow-400 text-white">
-        <textarea name="message" placeholder="Your Message" rows="4" required class="w-full p-3 rounded bg-black/40 border border-yellow-400 text-white"></textarea>
-        <button type="submit" class="px-6 py-3 bg-yellow-400 text-black font-bold rounded-full hover:bg-yellow-300 transition">
-          Send Message
-        </button>
-      </form>
-    </div>
+  <section id="support">
+    <h2>Support QuantumFun</h2>
+    <p>Help us build a secure, quantum-resistant blockchain by donating ETH to the address below:</p>
+    <p class="wallet">0x47d71f793682Ea883B8F55D87B96F88B717076BF</p>
+    <img src="assets/quantumfun/qr_placeholder.png" alt="QR Code" class="qr">
   </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-black/30 py-6 text-center text-sm">
-    &copy; 2025 QuantumFun. All rights reserved.
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us at: <a href="mailto:aiagentquantum@gmail.com">aiagentquantum@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 QuantumFun. All rights reserved.</p>
   </footer>
-
-  <script>
-    function copyWallet() {
-      const wallet = '0x47d71f793682Ea883B8F55D87B96F88B717076BF';
-      navigator.clipboard.writeText(wallet);
-      alert('Wallet address copied: ' + wallet);
-    }
-  </script>
 </body>
 </html>

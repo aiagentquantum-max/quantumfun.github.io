@@ -1,0 +1,92 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #001f3f, #003366);
+  color: white;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 50, 0.8);
+}
+
+header .logo img {
+  height: 60px;
+}
+
+header nav a {
+  color: gold;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url('assets/banner.jpg') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+h2 {
+  color: gold;
+  margin-bottom: 20px;
+}
+
+.logo-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo-grid img {
+  max-width: 120px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.logo-grid img:hover {
+  transform: scale(1.1);
+}
+
+.wallet {
+  font-size: 18px;
+  background: #222;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+footer {
+  background: #000;
+  padding: 10px;
+  margin-top: 20px;
+}
